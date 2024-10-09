@@ -1,0 +1,21 @@
+server:
+  port: 8087
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ecommerce_product_db
+    username: yourUsername
+    password: yourPassword
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  application:
+    name: ecommerce-product-service
+
+elasticsearch:
+  host: localhost
+  port: 9200
